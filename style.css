@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* MOBILE FIRST */
+
+.header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 5vw;
+  color: #fff;
+  z-index: 10;
+
+  h3 {
+    font-family: "Waterfall", cursive;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  .nav-mobile-menu ul {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 38px;
+    list-style: none;
+    top: 244px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #373737;
+    width: 72%;
+    align-items: center;
+    height: 295px;
+    justify-content: center;
+    z-index: 10;
+    font-family: "Baskervville", serif;
+    font-size: 20px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        border: 1px solid rgba(255, 96, 34, 0.54);
+        position: absolute;
+        width: 100%;
+        top: 22px;
+      }
+    }
+  }
+
+  .active {
+    display: flex !important;
+  }
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: "Parastoo", serif;
+    font-size: 148px;
+    color: #fff;
+    line-height: 111px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .titulo-effect1 {
+    margin-left: 64px;
+  }
+
+  .titulo-effect2 {
+    margin-left: 128px;
+  }
+
+  h2 {
+    font-family: "Waterfall", cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .img-main-mobile img {
+    position: absolute;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.sobre {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: "Waterfall", cursive;
+    font-size: 54px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 28px;
+  }
+
+  .conteudo-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 16%;
+
+    p {
+      font-family: "Baskervville", serif;
+      font-style: italic;
+      font-size: 18px;
+      color: #fff;
+      width: 44%;
+      line-height: 24px;
+    }
+  }
+
+  .img-sobre img {
+    position: absolute;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.servicos {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: "Waterfall", cursive;
+    font-size: 64px;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .lista-servicos {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 30px;
+    margin-top: 116px;
+    margin-right: 58px;
+
+    li {
+      font-family: "Baskervville", serif;
+      font-size: 20px;
+      /* list-style: none; */
+      position: relative;
+
+      &::marker {
+        color: #ff5411;
+      }
+    }
+  }
+
+  .img-servicos img {
+    position: absolute;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.parceiros {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282828;
+
+  h2 {
+    font-family: "Waterfall", cursive;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 38px;
+  }
+
+  .imgs-slider {
+    display: flex;
+    width: 100%;
+    /* min-height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+    margin-top: 74px;
+
+    .card-slider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 258px;
+      height: 378px;
+
+      .slider {
+        opacity: 0;
+        transition: opacity 0.2s;
+        position: absolute;
+        width: 100%;
+      }
+
+      .on {
+        opacity: 1;
+      }
+    }
+
+    #prev-button,
+    #next-button {
+      /* width: 30px;
+      height: 30px; */
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    #prev-button img,
+    #next-button img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.planos {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  h2 {
+    font-family: "Waterfall", cursive;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 22px;
+    margin-bottom: 18px;
+  }
+
+  .conteudo-planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Baskervville", serif;
+
+    h3 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 1px;
+      flex-direction: column;
+
+      li {
+        list-style: none;
+        font-size: 17px;
+
+        &:last-child {
+          margin-top: 8px;
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          position: relative;
+
+          &::before {
+            content: "";
+            border: 1px solid #ff5411;
+            position: absolute;
+            width: 45%;
+            top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .img-planos img {
+    position: absolute;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.contato {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  justify-content: center;
+  padding-left: 8vw;
+
+  h2 {
+    font-family: "Waterfall", cursive;
+    font-size: 84px;
+    font-weight: 400;
+    line-height: 64px;
+  }
+
+  p {
+    font-family: "Parastoo", serif;
+    font-size: 32px;
+    width: 84%;
+    line-height: 25px;
+    letter-spacing: 3px;
+    margin-top: 12px;
+  }
+
+  ul {
+    font-family: "Parastoo", serif;
+    margin-top: 24px;
+    font-size: 24px;
+    list-style: none;
+
+    img {
+      width: 24px;
+      margin-right: 8px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+  }
+
+  .img-contato img {
+    position: absolute;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #000000;
+}

@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
   overflow-x: hidden;
 }
 
@@ -79,6 +76,7 @@ body {
     line-height: 111px;
     font-weight: 400;
     margin-bottom: 20px;
+    overflow: hidden;
   }
 
   .titulo-effect1 {
@@ -98,8 +96,8 @@ body {
 
   .img-main-mobile img {
     position: absolute;
-    /* max-height: 100%; */
-    max-width: 100%;
+    max-height: 100%;
+    /* max-width: 100%; */
     top: 0;
     left: 0;
     z-index: -1;
@@ -141,8 +139,8 @@ body {
 
   .img-sobre img {
     position: absolute;
-    /* max-height: 100%; */
-    max-width: 100%;
+    max-height: 100%;
+    /* max-width: 100%; */
     top: 0;
     left: 0;
     z-index: -1;
@@ -187,8 +185,8 @@ body {
 
   .img-servicos img {
     position: absolute;
-    /* max-height: 100%; */
-    max-width: 100%;
+    max-height: 100%;
+    /* max-width: 100%; */
     top: 0;
     left: 0;
     z-index: -1;
@@ -320,8 +318,8 @@ body {
 
   .img-planos img {
     position: absolute;
-    /* max-height: 100%; */
-    max-width: 100%;
+    max-height: 100%;
+    /* max-width: 100%; */
     top: 0;
     left: 0;
     z-index: -1;
@@ -376,8 +374,8 @@ body {
 
   .img-contato img {
     position: absolute;
-    /* max-height: 100%; */
-    max-width: 100%;
+    max-height: 100%;
+    /* max-width: 100%; */
     top: 0;
     left: 0;
     z-index: -1;

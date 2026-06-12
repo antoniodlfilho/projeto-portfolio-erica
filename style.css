@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* MOBILE FIRST */
 
 .header {
@@ -128,8 +132,9 @@
       font-style: italic;
       font-size: 18px;
       color: #fff;
+      font-weight: 500;
       width: 44%;
-      line-height: 24px;
+      line-height: 26px;
     }
   }
 
@@ -151,24 +156,26 @@
 
   h2 {
     font-family: "Waterfall", cursive;
-    font-size: 64px;
+    font-size: 74px;
     color: #fff;
     font-weight: 400;
+    padding-top: 38px;
   }
 
   .lista-servicos {
     display: flex;
     flex-direction: column;
     color: #fff;
-    gap: 30px;
-    margin-top: 116px;
-    margin-right: 58px;
+    gap: 34px;
+    margin-top: 88px;
+    margin-right: 44px;
 
     li {
       font-family: "Baskervville", serif;
       font-size: 20px;
       /* list-style: none; */
       position: relative;
+      font-weight: 500;
 
       &::marker {
         color: #ff5411;
@@ -186,7 +193,7 @@
 }
 
 .parceiros {
-  height: 100vh;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,7 +214,7 @@
     align-items: center;
     justify-content: center;
     /* gap: 1rem; */
-    margin-top: 74px;
+    margin-top: 48px;
 
     .card-slider {
       position: relative;
@@ -269,9 +276,10 @@
     align-items: center;
     text-align: center;
     font-family: "Baskervville", serif;
+    gap: 20px;
 
     h3 {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 400;
       margin-bottom: 12px;
     }
@@ -284,10 +292,10 @@
 
       li {
         list-style: none;
-        font-size: 17px;
+        font-size: 18px;
 
         &:last-child {
-          margin-top: 8px;
+          margin-top: 10px;
         }
 
         a {
@@ -336,8 +344,8 @@
   p {
     font-family: "Parastoo", serif;
     font-size: 32px;
-    width: 84%;
-    line-height: 25px;
+    width: 88%;
+    line-height: 32px;
     letter-spacing: 3px;
     margin-top: 12px;
   }

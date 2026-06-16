@@ -37,6 +37,7 @@ prev.addEventListener("click", prevtSlider);
 
 const menuHam = document.getElementById("menu_ham");
 const listMenuMobile = document.getElementById("menu_mobile");
+const linksMenu = document.querySelectorAll('[href^="#"]');
 
 function activeMenu() {
   listMenuMobile.classList.toggle("active");
@@ -52,3 +53,9 @@ function imgTroca() {
 
 menuHam.addEventListener("click", activeMenu);
 menuHam.addEventListener("click", imgTroca);
+linksMenu.forEach((link) => {
+  link.addEventListener("click", () => {
+    listMenuMobile.classList.remove("active");
+    menuHam.src = "./imgs/menu-mobile.svg";
+  });
+});

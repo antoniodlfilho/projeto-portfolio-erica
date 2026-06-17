@@ -5,8 +5,8 @@
   scroll-behavior: smooth;
 }
 
-html {
-  overflow-x: hidden;
+body {
+  background-color: #000000;
 }
 
 /* MOBILE FIRST */
@@ -20,6 +20,8 @@ html {
   color: #fff;
   z-index: 10;
   align-items: center;
+  /* mix-blend-mode: difference; */
+  position: fixed;
 
   h3 {
     font-family: "Waterfall", cursive;
@@ -44,6 +46,7 @@ html {
     z-index: 10;
     font-family: "Baskervville", serif;
     font-size: 20px;
+    mix-blend-mode: normal;
 
     a {
       color: #fff;

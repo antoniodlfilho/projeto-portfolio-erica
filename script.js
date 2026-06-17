@@ -35,6 +35,7 @@ function prevtSlider() {
 next.addEventListener("click", nextSlider);
 prev.addEventListener("click", prevtSlider);
 
+// MENU MOBILE
 const menuHam = document.getElementById("menu_ham");
 const listMenuMobile = document.getElementById("menu_mobile");
 const linksMenu = document.querySelectorAll('[href^="#"]');
